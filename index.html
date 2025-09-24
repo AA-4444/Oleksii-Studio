@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Zarytskyi - Developer & Design portoflio</title>
+    <meta name="description" content="Award-winning creative developer specializing in web design, UI/UX, and interactive development. Creating exceptional digital experiences with cutting-edge technology.">
+    <meta name="author" content="Alex Johnson">
+    <meta name="keywords" content="creative developer, web design, UI/UX designer, portfolio, frontend development, interactive design">
+
+    <meta property="og:title" content="Alex Zarytskyi - Developer & Design portoflio">
+    <meta property="og:description" content="Created as a space to connect with clients and highlight of skills">
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav-container">
+        <div class="nav-content">
+            <div class="nav-brand">Portfolio</div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-desktop">
+                <div class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#projects" class="nav-link dropdown-trigger">
+                        Work
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#projects" class="dropdown-item">Web Development</a>
+                        <a href="#projects" class="dropdown-item">IOS Development</a>
+                        <a href="#projects" class="dropdown-item">AI Integration</a>
+                        <a href="#projects" class="dropdown-item">UI/UX</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero" class="mobile-menu-item">Home</a>
+            <a href="#about" class="mobile-menu-item">About</a>
+            <a href="#projects" class="mobile-menu-item">Work</a>
+            <a href="#skills" class="mobile-menu-item">Skills</a>
+            <a href="#contact" class="mobile-menu-item">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-intro">Hello, I'm</div>
+            <h1 class="hero-title">Oleksii Zarytskyi</h1>
+            <h2 class="hero-subtitle">Creative Developer & Designer</h2>
+            <p class="hero-description">
+                I create standout digital experience 
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#about')">View My Work</button>
+                <button class="btn btn-outline" onclick="scrollToSection('#contact')">Get In Touch</button>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/AA-4444" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="mailto:zarytskyi4444@gmail.com" class="social-link" aria-label="Email me" title="Email me">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <button onclick="scrollToSection('#about')" class="scroll-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+               <div class="section-label">About Me</div>
+               <h2 class="section-title">Crafting Digital Excellence</h2>
+               <div class="about-text">
+                   <p>Hi, I’m a developer with about 3 years of experience working on websites, iOS apps, and AI integrations. Most of my work is full-stack web development, but I also enjoy building chatbots and experimenting with how AI can improve digital experiences.</p>
+                   <p>I like keeping things practical — making sure what I build not only looks good but works smoothly for the people using it.</p>
+                   <p>Outside of coding, I’m usually exploring new design ideas, testing out tools, or sharing what I’ve learned with the community.</p>
+               </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-value">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="stat-value">10+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Cups of Coffee</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-value">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="rotating-circles">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                        <div class="center-content">
+                            <div class="years">3+</div>
+                            <div class="years-label">Years of<br>Excellence</div>
+                        </div>
+                    </div>
+                    <div class="floating-dots">
+                        <div class="dot" style="left: 10%; top: 20%;"></div>
+                        <div class="dot" style="left: 80%; top: 30%;"></div>
+                        <div class="dot" style="left: 20%; top: 80%;"></div>
+                        <div class="dot" style="left: 70%; top: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section 
+    <section id="projects" class="projects-section">
+        <div class="projects-bg-glow"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Featured Work</div>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-description">
+                    A showcase of my recent work spanning web development, mobile applications, 
+                    and brand identity design. Each project represents a unique challenge and 
+                    creative solution.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A modern, responsive e-commerce platform with advanced filtering, real-time inventory, and seamless checkout experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <button class="view-project-btn">
+                            View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop" alt="Brand Identity System">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Brand Identity System</h3>
+                        <p class="project-description">Complete brand identity redesign for a tech startup, including logo, color palette, typography, and brand guidelines.</p>
+                        <div class="project-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Adobe CC</span>
+                        </div>
+                        <button class="view-project-btn">
+                            View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Mobile Banking App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Mobile Development</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Mobile Banking App</h3>
+                        <p class="project-description">Intuitive mobile banking application with biometric authentication, expense tracking, and financial insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <button class="view-project-btn">
+                            View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="SaaS Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">SaaS Dashboard</h3>
+                        <p class="project-description">Analytics dashboard for SaaS platforms with real-time data visualization and customizable widgets.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <button class="view-project-btn">
+                            View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <button class="btn btn-outline-large">
+                    View All Projects
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Expertise</div>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-description">
+                    A comprehensive toolkit of modern technologies and methodologies to bring 
+                    innovative ideas to life with precision and creativity.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">Creating responsive, interactive interfaces with modern frameworks and cutting-edge technologies.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Java Script</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Designing intuitive user experiences with attention to aesthetics and usability principles.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">User Research</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">IOS Development</h3>
+                    <p class="skill-description">Building cross-platform mobile applications with native performance and smooth animations.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">SwiftUI</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Developing scalable server-side applications with robust APIs and database optimization.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Web Performance</h3>
+                    <p class="skill-description">Optimizing applications for speed, SEO, and exceptional user experience across all devices.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Performance Audit</span>
+                        <span class="skill-tag">Core Web Vitals</span>
+                        <span class="skill-tag">Accessibility</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Creative Development</h3>
+                    <p class="skill-description">Implementing complex animations, interactive experiences, and award-winning web solutions.</p>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-value">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Framer Motion</span>
+                        <span class="skill-tag">Spline</span>
+                        <span class="skill-tag">Rive</span>
+                        <span class="skill-tag">Lottie </span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">Canvas API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-cta">
+                <div class="cta-card">
+                    <h3 class="cta-title">Ready to Create Something Amazing?</h3>
+                    <p class="cta-description">
+                        Let's collaborate and bring your vision to life with cutting-edge technology 
+                        and award-winning design principles.
+                    </p>
+                    <button class="btn btn-primary" onclick="scrollToSection('#contact')">Start a Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg-glow"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Ready to bring your next project to life? I'd love to hear about your ideas 
+                    and discuss how we can create something extraordinary together.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Send Message
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">zarytskyi4444@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">+48796186207</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Poland</div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4 class="social-title">Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/AA-4444" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                         
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <h4 class="availability-title">Availability</h4>
+                        <div class="availability-status">
+                            <div class="status-dot"></div>
+                            <span class="status-text">Available for new projects</span>
+                        </div>
+                        <p class="availability-description">
+                            I'm currently accepting new projects and would love to discuss your ideas. 
+                            Typical response time is within 24 hours.
+                        </p>
+                    </div>
+
+                    <div class="cta-meeting">
+                        <p class="meeting-text">Prefer to schedule a call?</p>
+                        <button class="btn btn-outline">Book a Meeting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">Alex Zarytskyi</h3>
+                    <p class="footer-description">
+                        Creative developer crafting exceptional digital experiences with 
+                        cutting-edge technology and award-winning design principles.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <nav class="footer-nav">
+                            <a href="#hero" class="footer-link">Home</a>
+                            <a href="#about" class="footer-link">About</a>
+                            <!-- <a href="#projects" class="footer-link">Projects</a>--> 
+                            <a href="#skills" class="footer-link">Skills</a>
+                            <a href="#contact" class="footer-link">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Services</h4>
+                        <nav class="footer-nav">
+                            <div class="footer-link">Web Development</div>
+                            <div class="footer-link">IOS Development</div>
+                            <div class="footer-link">UI/UX Design</div>
+                            <div class="footer-link">AI Integration</div>
+                            <div class="footer-link">BOTS</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <span>Made with</span>
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span>from Kiev</span>
+                </div>
+                <div class="footer-copyright">
+                    <span>© 2024 Oleksii Zarytskyi. All rights reserved.</span>
+                    <button class="scroll-to-top" onclick="scrollToTop()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5,12 12,5 19,12"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
