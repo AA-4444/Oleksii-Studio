@@ -1748,3 +1748,18 @@ body {
 .animate-on-scroll.scale.animated {
     transform: scale(1);
 }
+/* Fix: центрируем стрелку на мобилках */
+@media (max-width: 767px) {
+  .scroll-indicator {
+    left: 0;
+    right: 0;
+    transform: none;           
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    pointer-events: none;     
+  }
+  .scroll-indicator .scroll-btn {
+    pointer-events: auto;       
+  }
+}
